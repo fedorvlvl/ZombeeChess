@@ -4,7 +4,7 @@ using System.Collections;
 //make commands and directives to units (birth, make command stay or attack) 
 // logik of game
 public class GameAI : MonoBehaviour {
-	public bool GameFast=false; // on/off animation units walk
+	
 	public bib.UTag NewStep=bib.UTag.isNeutral;
 	public bib.UTag Step=bib.UTag.isNeutral;
 	public int RoundStep=0;
