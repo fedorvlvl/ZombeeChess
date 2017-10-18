@@ -53,13 +53,13 @@ public class GameAI : MonoBehaviour {
 		getWay();
 		Debug.Log("You puted your unit " + Step + " on desk");
 	}
-	void getWay()
+	public void getWay()
 	{
-		
+		Debug.Log("Pick2");
 	}
-	void getUClases()
+	public void getUClases()
 	{
-		
+
 	}
 	#endregion
 	void unitDoStep()
