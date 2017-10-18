@@ -55,11 +55,11 @@ public class GameAI : MonoBehaviour {
 	}
 	public void getWay()
 	{
-		Debug.Log("Pick2");
+		Debug.Log("s1");
 	}
 	public void getUClases()
 	{
-
+		
 	}
 	#endregion
 	void unitDoStep()
@@ -86,7 +86,7 @@ public class GameAI : MonoBehaviour {
 
 
 	#region CopyPaste
-/*
+  /*
      Debug.Log("round "+ RoundStep);
  * */
 
