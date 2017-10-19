@@ -55,7 +55,7 @@ public class GameAI : MonoBehaviour {
 	}
 	public void getWay()
 	{
-		Debug.Log("s1");
+		
 	}
 	public void getUClases()
 	{
