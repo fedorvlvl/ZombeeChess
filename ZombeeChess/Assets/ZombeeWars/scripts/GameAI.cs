@@ -3,15 +3,23 @@ using System.Collections;
 
 //make commands and directives to units (birth, make command stay or attack) 
 // logik of game
+/* manadger of game
+1) start
+2) random pass first step
+3) event select unit + event select way = unit on desk
+4) event unit finished his step on desk
+5) other all units making his steps.
+*/
 public class GameAI : MonoBehaviour {
 	
 	public bib.UTag NewStep=bib.UTag.isNeutral;
-	public bib.UTag Step=bib.UTag.isNeutral;
+	public bib.UTag CurrentStep=bib.UTag.isNeutral;
 	public int RoundStep=0;
 	bib.IconUnit storageWhiteUnit=bib.IconUnit.SoliderZiro;
 	bib.IconUnit storageBlackUnit=bib.IconUnit.SoliderZiro;
 	bib.WayNames storageWhiteWay=bib.WayNames.wayZiro;
 	bib.WayNames storageBlackWay=bib.WayNames.wayZiro;
+
 	#region random first step and gamer get a step
 	// random change first player
 	// gamer get a step - (put his unit to desk and unit do the step and give step to opponent)
@@ -26,13 +34,15 @@ public class GameAI : MonoBehaviour {
 		default: break;
 		}
 		FirstPlayer=NewStep;
-	}	 	
-	void eventStepChanged() //  
+	}	
+	#endregion 	
+
+	void eventStepChanged() //  the event pass step to opponent
 	{
-		if(Step!=NewStep)
+		if(CurrentStep!=NewStep)
 		{
-			Step=NewStep;
-			if (FirstPlayer==Step) 
+			CurrentStep=NewStep;
+			if (FirstPlayer==CurrentStep) 
 			{
 				RoundStep++;
 				Debug.Log("Round "+RoundStep);
@@ -40,21 +50,23 @@ public class GameAI : MonoBehaviour {
 			getStep();
 		}
 	}
+
 	//-----------------------
 	void getStep()
 	{
+		Debug.Log("Player "+ CurrentStep+ " your step is now");
 		putUnitOnDesk(); // pick yuor unit 
 		unitDoStep(); // wait walking or walking and attack our unit
 		otherOurUnitWalking();
 	}
 	//-----------------------
-	#endregion
+
 	#region putUnitOnDesk()
 	void putUnitOnDesk()
 	{
 		getUClases();
 		getWay();
-		Debug.Log("You puted your unit " + Step + " on desk");
+		Debug.Log("You puted your unit " + CurrentStep + " on desk");
 	}
 	public void getWay()
 	{
@@ -63,7 +75,7 @@ public class GameAI : MonoBehaviour {
 	public void getUClases()
 	{
 
-		if(storageWhiteUnit!=bib.IconUnit.SoliderZiro && Step==bib.UTag.White)
+		if(storageWhiteUnit!=bib.IconUnit.SoliderZiro && CurrentStep==bib.UTag.White)
 		{
 			
 		}
@@ -71,17 +83,17 @@ public class GameAI : MonoBehaviour {
 	#endregion
 	void unitDoStep()
 	{
-		Debug.Log("Your unit " + Step + "  walked ");
+		Debug.Log("Your unit " + CurrentStep + "  walked ");
 	}
 	void otherOurUnitWalking()
 	{
-		Debug.Log("Your other units " + Step + "  walked ");
+		Debug.Log("Your other units " + CurrentStep + "  walked ");
 	}
 	void giveStepToOpponent() // this use after otherOurUnitWalking()
 	{
 		if(Input.GetKeyDown(KeyCode.W))
 		{
-			switch (Step)
+			switch (CurrentStep)
 			{
 			case bib.UTag.White: NewStep=bib.UTag.Black; break;
 			case bib.UTag.Black: NewStep=bib.UTag.White; break;
@@ -94,6 +106,10 @@ public class GameAI : MonoBehaviour {
 
 	#region CopyPaste
   /*
+
+
+
+
      Debug.Log("round "+ RoundStep);
  * */
 
