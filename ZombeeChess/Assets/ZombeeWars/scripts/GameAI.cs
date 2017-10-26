@@ -8,7 +8,10 @@ public class GameAI : MonoBehaviour {
 	public bib.UTag NewStep=bib.UTag.isNeutral;
 	public bib.UTag Step=bib.UTag.isNeutral;
 	public int RoundStep=0;
-
+	bib.IconUnit storageWhiteUnit=bib.IconUnit.SoliderZiro;
+	bib.IconUnit storageBlackUnit=bib.IconUnit.SoliderZiro;
+	bib.WayNames storageWhiteWay=bib.WayNames.wayZiro;
+	bib.WayNames storageBlackWay=bib.WayNames.wayZiro;
 	#region random first step and gamer get a step
 	// random change first player
 	// gamer get a step - (put his unit to desk and unit do the step and give step to opponent)
@@ -49,7 +52,7 @@ public class GameAI : MonoBehaviour {
 	#region putUnitOnDesk()
 	void putUnitOnDesk()
 	{
-		getUClases(); 
+		getUClases();
 		getWay();
 		Debug.Log("You puted your unit " + Step + " on desk");
 	}
@@ -59,7 +62,11 @@ public class GameAI : MonoBehaviour {
 	}
 	public void getUClases()
 	{
-		
+
+		if(storageWhiteUnit!=bib.IconUnit.SoliderZiro && Step==bib.UTag.White)
+		{
+			
+		}
 	}
 	#endregion
 	void unitDoStep()

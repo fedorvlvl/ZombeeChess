@@ -8,9 +8,11 @@ public class bib : MonoBehaviour
 	public enum UStates {wait,moove,attack1,attack2,dead,patient};
 	public enum UTyp {Tank,DD,RangeDD};
 	public enum UClases{Hiller,Solider,Sniper,Tank,Ninzya, Rider};
-	public enum WayNames{way1,way2,way3,way4,way5};
-	public enum IconUnit{Solider1,Solider2,Solider3,Solider4,Solider5,Solider6};
+	public enum WayNames{wayZiro,way1,way2,way3,way4,way5};
+	public enum IconUnit{SoliderZiro,Solider1,Solider2,Solider3,
+	Solider4,Solider5,Solider6};
     #endregion
+
 
 
     #region unitsParameters
@@ -20,7 +22,6 @@ public class bib : MonoBehaviour
 	public static int HPRanger=50;
 
 	public static float speed=5.0f;
-
 
 
     #endregion
