@@ -5,6 +5,7 @@ public class UnitBase : MonoBehaviour {
 	public bib.UTag UnitTag;
 	public bib.UClases UnitClass;
 	public bib.UStates currentStates=bib.UStates.wait;
+	public bib.UStatus IsLast=bib.UStatus.IsnotLast;
 
 
 

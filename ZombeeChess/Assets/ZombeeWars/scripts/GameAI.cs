@@ -9,6 +9,9 @@ using System.Collections;
 3) event select unit + event select way = unit on desk
 4) event unit finished his step on desk
 5) other all units making his steps.
+6) when last unit finished his action,
+  pass step to opponent (last unit send to GameM about his finish)
+     
 */
 public class GameAI : MonoBehaviour {
 	
@@ -37,19 +40,7 @@ public class GameAI : MonoBehaviour {
 	}	
 	#endregion 	
 
-	void eventStepChanged() //  the event pass step to opponent
-	{
-		if(CurrentStep!=NewStep)
-		{
-			CurrentStep=NewStep;
-			if (FirstPlayer==CurrentStep) 
-			{
-				RoundStep++;
-				Debug.Log("Round "+RoundStep);
-			}
-			getStep();
-		}
-	}
+
 
 	//-----------------------
 	void getStep()
@@ -74,7 +65,6 @@ public class GameAI : MonoBehaviour {
 	}
 	public void getUClases()
 	{
-
 		if(storageWhiteUnit!=bib.IconUnit.SoliderZiro && CurrentStep==bib.UTag.White)
 		{
 			
@@ -89,10 +79,25 @@ public class GameAI : MonoBehaviour {
 	{
 		Debug.Log("Your other units " + CurrentStep + "  walked ");
 	}
+
+	void eventStepChanged() //  the event pass step to opponent
+	{
+		if(CurrentStep!=NewStep)
+		{
+			CurrentStep=NewStep;
+			if (FirstPlayer==CurrentStep) 
+			{
+				RoundStep++;
+				Debug.Log("Round "+RoundStep);
+			}
+			getStep();
+		}
+	}
 	void giveStepToOpponent() // this use after otherOurUnitWalking()
 	{
-		if(Input.GetKeyDown(KeyCode.W))
+		if(Input.GetKeyDown(KeyCode.W)) // looking at finish action last unit
 		{
+
 			switch (CurrentStep)
 			{
 			case bib.UTag.White: NewStep=bib.UTag.Black; break;
@@ -101,8 +106,6 @@ public class GameAI : MonoBehaviour {
 		    }
 		}
 	}
-
-
 
 	#region CopyPaste
   /*
