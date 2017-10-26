@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 11400000}
   m_Layer: 0
-  m_Name: unitBase
+  m_Name: unitBase 1
   m_TagString: Untagged
   m_Icon: {fileID: 866134395, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
