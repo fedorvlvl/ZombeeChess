@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets\ZombeeWars\scripts\bib.cs" Line="11" Column="38" />
       <File FileName="Assets\ZombeeWars\scripts\UnitScripts\UnitBase.cs" Line="8" Column="50" />
-      <File FileName="Assets\ZombeeWars\scripts\GameAI.cs" Line="41" Column="12" NotebookId="1" />
+      <File FileName="Assets\ZombeeWars\scripts\GameAI.cs" Line="48" Column="17" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

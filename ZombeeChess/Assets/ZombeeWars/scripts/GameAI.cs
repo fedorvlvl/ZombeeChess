@@ -45,6 +45,7 @@ public class GameAI : MonoBehaviour {
 	//-----------------------
 	void getStep()
 	{
+		if(CurrentStep)
 		Debug.Log("Player "+ CurrentStep+ " your step is now");
 		putUnitOnDesk(); // pick yuor unit 
 		unitDoStep(); // wait walking or walking and attack our unit
@@ -65,10 +66,7 @@ public class GameAI : MonoBehaviour {
 	}
 	public void getUClases()
 	{
-		if(storageWhiteUnit!=bib.IconUnit.SoliderZiro && CurrentStep==bib.UTag.White)
-		{
-			
-		}
+
 	}
 	#endregion
 	void unitDoStep()
@@ -97,7 +95,6 @@ public class GameAI : MonoBehaviour {
 	{
 		if(Input.GetKeyDown(KeyCode.W)) // looking at finish action last unit
 		{
-
 			switch (CurrentStep)
 			{
 			case bib.UTag.White: NewStep=bib.UTag.Black; break;
