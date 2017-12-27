@@ -22,6 +22,8 @@ public class GameAI : MonoBehaviour {
 	bib.IconUnit storageBlackUnit=bib.IconUnit.SoliderZiro;
 	bib.WayNames storageWhiteWay=bib.WayNames.wayZiro;
 	bib.WayNames storageBlackWay=bib.WayNames.wayZiro;
+	bib.IconUnit storageCurrentUnit;
+	bib.WayNames storageCurrentWay;
 
 	#region random first step and gamer get a step
 	// random change first player
@@ -38,16 +40,30 @@ public class GameAI : MonoBehaviour {
 		}
 		FirstPlayer=NewStep;
 	}	
-	#endregion 	
-
-
+	#endregion 
 
 	//-----------------------
-	void getStep()
-	{
-		if(CurrentStep)
-		Debug.Log("Player "+ CurrentStep+ " your step is now");
-		putUnitOnDesk(); // pick yuor unit 
+	void getStep ()
+	{	
+		switch (CurrentStep) {
+		case bib.UTag.White: 
+			if(storageWhiteUnit!=bib.IconUnit.SoliderZiro &&
+				storageWhiteWay!=bib.WayNames.wayZiro){
+		    		storageCurrentUnit=storageWhiteUnit;
+					storageCurrentWay=storageWhiteWay;
+					putUnitOnDesk();
+				}; break;
+		case bib.UTag.Black: 
+			if(storageBlackUnit!=bib.IconUnit.SoliderZiro &&
+				storageBlackWay!=bib.WayNames.wayZiro){
+					storageCurrentUnit=storageBlackUnit;
+					storageCurrentWay=storageBlackWay;
+					putUnitOnDesk();
+			}; break;
+		default: Debug.Log(CurrentStep +" put your zombe on desk");
+		break;
+		}
+		 // pick your unit 
 		unitDoStep(); // wait walking or walking and attack our unit
 		otherOurUnitWalking();
 	}
@@ -56,9 +72,7 @@ public class GameAI : MonoBehaviour {
 	#region putUnitOnDesk()
 	void putUnitOnDesk()
 	{
-		getUClases();
-		getWay();
-		Debug.Log("You puted your unit " + CurrentStep + " on desk");
+		
 	}
 	public void getWay()
 	{
@@ -86,7 +100,7 @@ public class GameAI : MonoBehaviour {
 			if (FirstPlayer==CurrentStep) 
 			{
 				RoundStep++;
-				Debug.Log("Round "+RoundStep);
+				Debug.Log("Raund "+RoundStep);
 			}
 			getStep();
 		}
