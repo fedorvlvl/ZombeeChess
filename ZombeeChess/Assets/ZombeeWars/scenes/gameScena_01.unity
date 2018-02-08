@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &5
@@ -165,12 +166,12 @@ Prefab:
     - target: {fileID: 224200283567757202, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 205.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224200283567757202, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 115.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224200283567757202, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
         type: 2}
@@ -257,26 +258,16 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1462466686}
-    - target: {fileID: 114439080684590450, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 219181621}
     - target: {fileID: 223490505084720940, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
         type: 2}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1462466686}
-    - target: {fileID: 114592464951453746, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
+    - target: {fileID: 114439080684590450, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1063635857}
-    - target: {fileID: 114592464951453746, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_name
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 219181621}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d7a52b6d123b2646a6eb2e924f5bd47, type: 2}
   m_IsPrefabParent: 0
@@ -322,11 +313,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80ab8d03a9928a74bb4b7bdcbc2e26db, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1063635857 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1020419437523270, guid: 6d7a52b6d123b2646a6eb2e924f5bd47,
-    type: 2}
-  m_PrefabInternal: {fileID: 658640916}
 --- !u!1 &1371399925
 GameObject:
   m_ObjectHideFlags: 0
