@@ -54,7 +54,8 @@
      <Compile Include="Assets\ZombeeWars\scripts\bib.cs" />
      <Compile Include="Assets\ZombeeWars\scripts\GameAI.cs" />
      <Compile Include="Assets\ZombeeWars\scripts\GameM.cs" />
-     <Compile Include="Assets\ZombeeWars\scripts\GUIscript\Draggable.cs" />
+     <Compile Include="Assets\ZombeeWars\scripts\GUIscript\DraggableGUI.cs" />
+     <Compile Include="Assets\ZombeeWars\scripts\GUIscript\DropZoneGUI.cs" />
      <Compile Include="Assets\ZombeeWars\scripts\StaticUniversal.cs" />
      <Compile Include="Assets\ZombeeWars\scripts\UnitScripts\UnitBase.cs" />
  <Reference Include="UnityEngine.UI">

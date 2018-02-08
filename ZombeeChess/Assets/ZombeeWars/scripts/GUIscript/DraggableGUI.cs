@@ -4,13 +4,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-public class Draggable : MonoBehaviour,IBeginDragHandler, IDragHandler,IEndDragHandler {
-	Transform parentToReturnTo=null;
+public class DraggableGUI : MonoBehaviour,IBeginDragHandler, IDragHandler,IEndDragHandler {
+	public Transform parentToReturnTo=null;
 
 	public void OnBeginDrag(PointerEventData eventData){
 		Debug.Log ("OnBeginDrag");
 		parentToReturnTo = this.transform.parent;
 		this.transform.SetParent (this.transform.parent.parent);
+
+		GetComponent<CanvasGroup> ().blocksRaycasts = false;
 	}
 	public void OnDrag(PointerEventData eventData){
 		Debug.Log ("OnDrag");
@@ -21,5 +23,6 @@ public class Draggable : MonoBehaviour,IBeginDragHandler, IDragHandler,IEndDragH
 		Debug.Log ("OnEndDrag");
 
 		this.transform.SetParent (parentToReturnTo);
+		GetComponent<CanvasGroup> ().blocksRaycasts = true;
 	}
 }
