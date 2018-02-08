@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114220256453359728}
   - component: {fileID: 114713477955788896}
   m_Layer: 5
-  m_Name: PanelWay (3)
+  m_Name: PanelWay4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114159865720840968}
   - component: {fileID: 114599027182443106}
   m_Layer: 5
-  m_Name: PanelWay
+  m_Name: PanelWay1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 114719202953833000}
   - component: {fileID: 114669936696394386}
   m_Layer: 5
-  m_Name: PanelWay (4)
+  m_Name: PanelWay5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 114188877899904026}
   - component: {fileID: 114922214696300340}
   m_Layer: 5
-  m_Name: PanelWay (2)
+  m_Name: PanelWay3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 114040863673396688}
   - component: {fileID: 114617883416938822}
   m_Layer: 5
-  m_Name: PanelWay (1)
+  m_Name: PanelWay2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.392}
+  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.066}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.392}
+  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.066}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.392}
+  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.066}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.392}
+  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.066}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.392}
+  m_Color: {r: 0.26859862, g: 0.7941176, b: 0.5549158, a: 0.066}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
