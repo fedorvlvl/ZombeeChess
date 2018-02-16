@@ -13,8 +13,8 @@ using System.Collections;
   pass step to opponent (last unit send to GameM about his finish)
      
 */
-public class GameAI : MonoBehaviour {
-	
+public class GameDriver : MonoBehaviour {
+
 	public bib.UTag NewStep=bib.UTag.isNeutral;
 	public bib.UTag CurrentStep=bib.UTag.isNeutral;
 	public int RoundStep=0;
@@ -131,11 +131,12 @@ public class GameAI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//gameObject.tag = bib.tagGameDriver;
 		firstStep();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () {		
 		eventStepChanged();
 		giveStepToOpponent();
 	}

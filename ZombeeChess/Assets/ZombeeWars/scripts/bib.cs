@@ -3,6 +3,9 @@ using System.Collections;
 // содержит все цифры и переменные которыми будем оперировать
 public class bib : MonoBehaviour
 {
+	//public static string tagGameDriver = "GameController";
+
+
 	#region UnitState UTag UClases
 	public enum UTag{White,Black,isNeutral};
 	public enum UStates {wait,move,attack1,attack2,dead,

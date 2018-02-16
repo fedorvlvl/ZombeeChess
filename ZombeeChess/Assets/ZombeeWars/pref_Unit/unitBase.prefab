@@ -112,9 +112,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3599227dac2ab714bb6b90bbddd1e468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitTag: 0
+  UnitTag: 2
   UnitClass: 0
   currentStates: 0
+  IsLast: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
