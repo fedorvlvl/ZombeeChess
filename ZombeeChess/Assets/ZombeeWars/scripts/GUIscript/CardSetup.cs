@@ -16,3 +16,4 @@ public class CardSetup : MonoBehaviour {
 		
 	}
 }
+// 20400079111289
