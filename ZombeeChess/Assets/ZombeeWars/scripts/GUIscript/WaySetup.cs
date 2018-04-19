@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof (DropZoneGUI))]
 public class WaySetup : MonoBehaviour {
 	[Header("Name the way")]
 	[Space]
