@@ -235,8 +235,6 @@ GameObject:
   - component: {fileID: 224245446291120630}
   - component: {fileID: 222105187326928678}
   - component: {fileID: 114161110643732714}
-  - component: {fileID: 114237693375888464}
-  - component: {fileID: 114617779020892830}
   m_Layer: 5
   m_Name: PanelScore
   m_TagString: Untagged
@@ -423,12 +421,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -517,18 +515,6 @@ MonoBehaviour:
   m_FlexibleWidth: 0
   m_FlexibleHeight: 0
   m_LayoutPriority: 1
---- !u!114 &114237693375888464
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1885019502154260}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be3f3f94177fa842a12cf80e4a70dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  way: 0
 --- !u!114 &114278521929775324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -890,17 +876,6 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
---- !u!114 &114617779020892830
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1885019502154260}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e7f67d38460b2d49b5dd575c42ddee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114639448015756928
 MonoBehaviour:
   m_ObjectHideFlags: 1
