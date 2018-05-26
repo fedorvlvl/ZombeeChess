@@ -7,8 +7,18 @@ public class UnitBase : MonoBehaviour {
 	public bib.UStates currentStates=bib.UStates.wait;
 	public bib.UStatus IsLast=bib.UStatus.IsnotLast;
 
+	void walkingBace ()
+	{
 
+	}
+	void attack ()
+	{
 
+	}
+	void playAniation ()
+	{
+
+	}
 
 	void unitSetup()
 	{
